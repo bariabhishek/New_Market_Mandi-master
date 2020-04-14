@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTP">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+    android:layout_width="365dp"
+    android:layout_height="34dp"
+    android:layout_marginTop="50dp"
+    android:gravity="center"
+    android:layout_marginLeft="20dp"
+    android:text="We have sent a OTP number on your mobile number"
+    android:textSize="15dp" />
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="365dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:text="number"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/editnumber"
+        android:layout_width="365dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:textColor="#38A1F1"
+        android:layout_marginLeft="20dp"
+        android:text="Edit?"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/otpEdit_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:maxLength="6"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otpEdit_"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="ENTER SMS VERIFICATON CODE"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/butlayout"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/resendcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="#BDBBBB"
+            android:text="Resend Code" />
+        <Button
+            android:id="@+id/otpconfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@color/lightGreen"
+            android:text="Next"
+
+             />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBarOtp"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

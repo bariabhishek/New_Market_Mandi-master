@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home007"
+            android:enabled="true"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"/>
+        <item
+            android:id="@+id/History"
+            android:enabled="true"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="History" />
+
+
+        <item
+            android:id="@+id/Recycle007"
+            android:enabled="true"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_rupee"
+            android:title="Rates" />
+
+        <item android:id="@+id/Wallet007"
+            android:enabled="true"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_account_balance_wallet"
+            android:title="Wallet"/>
+
+    </group>
+
+</menu>

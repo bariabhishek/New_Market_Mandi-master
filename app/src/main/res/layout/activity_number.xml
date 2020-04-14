@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".NumberActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_width="@dimen/_240sdp"
+        android:background="@drawable/log"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="180dp"/>
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:text="Fresh"
+            android:textColor="@color/orange"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Brigade"
+            android:textColor="@color/green"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/number"
+            android:layout_weight="8"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:hint="MOBILE NUMBER"
+            android:textColor="#000"
+            android:maxLength="10"
+            android:inputType="number|textNoSuggestions"
+            android:importantForAutofill="no"
+            android:padding="6dp"
+            android:background="@drawable/background_bottom_ll"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@color/lightGreen"
+            android:text="submit"
+            android:textColor="@color/white"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <ProgressBar
+
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/iv"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

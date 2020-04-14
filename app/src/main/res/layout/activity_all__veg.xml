@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".VegHome">
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_30sdp"
+        app:elevation="6dp"
+        android:layout_above="@+id/bottomlayout"
+        app:pressedTranslationZ="@dimen/_12sdp"
+        android:layout_alignParentRight="true" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:background="@color/lightGreen"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@color/lightGreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/left_arrow"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    android:padding="@dimen/_5sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select your Items"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_centerVertical="true"
+                   android:layout_toRightOf="@id/image"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textStyle="bold"
+
+                   />
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:background="#7A7979"
+        android:id="@+id/lay_btn"
+        android:layout_below="@id/appbarlayout"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="0.25"
+            android:background="#7A7979"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Vegetable"
+            android:textAllCaps="false"
+            android:id="@+id/btn_veg"
+            android:layout_below="@id/appbarlayout"
+            />
+        <Button
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:background="#7A7979"
+            android:layout_height="match_parent"
+            android:text="Fruits"
+            android:textAllCaps="false"
+            android:id="@+id/btn_fru"
+            android:layout_below="@id/appbarlayout"
+            />
+        <Button
+            android:layout_weight="0.25"
+            android:background="#7A7979"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Exotic "
+            android:id="@+id/btn_exo"
+            android:textAllCaps="false"
+            android:layout_below="@id/appbarlayout"
+            />
+        <Button
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:background="#7A7979"
+            android:layout_height="match_parent"
+            android:text="Organic"
+            android:textAllCaps="false"
+            android:id="@+id/btn_org"
+            android:layout_below="@id/appbarlayout"
+            />
+    </LinearLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recycle3"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/lay_btn"
+    android:layout_above="@id/bottomlayout"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+
+</android.support.v7.widget.RecyclerView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="4"
+        android:background="#7A7979"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/product_text_activity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Products"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/history_text_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="History"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/venders_text_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Vendor"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/wallet_text_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Wallet"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</RelativeLayout>

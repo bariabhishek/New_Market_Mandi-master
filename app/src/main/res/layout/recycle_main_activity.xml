@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:background="@color/lightGreen"
+        android:id="@+id/lay_btn1"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+
+            android:layout_height="@dimen/_35sdp">
+            <TextView
+                android:layout_weight="0.25"
+                android:background="@color/lightGreen"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_31sdp"
+                android:text="Vegetable"
+                android:textAllCaps="false"
+                android:id="@+id/btn_veg2"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl01"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorAccent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="0.25"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/lightGreen"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="Fruits"
+                android:textAllCaps="false"
+                android:id="@+id/btn_fru2"
+                />
+            <RelativeLayout
+                android:id="@+id/rl02"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:visibility="gone"
+                android:background="@color/colorAccent"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_weight="0.25"
+                android:background="@color/lightGreen"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="Exotic "
+                android:id="@+id/btn_exo2"
+                android:textAllCaps="false"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/rl03"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:visibility="gone"
+                android:background="@color/colorAccent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_weight="0.25"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/lightGreen"
+                android:layout_height="match_parent"
+                android:text="Organic"
+                android:textAllCaps="false"
+                android:id="@+id/btn_org2"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl04"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:visibility="gone"
+                android:background="@color/colorAccent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/lay_btn1"
+        android:id="@+id/recycleoop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbaroo9"
+
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

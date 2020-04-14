@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vender_selection_Item">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool"
+            android:background="@color/lightGreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Product"
+                android:textColor="#fff"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:background="@color/lightGreen"
+        android:id="@+id/lay_btn"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="0.25"
+            android:background="@color/lightGreen"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Vegetable"
+            android:textAllCaps="false"
+            android:id="@+id/btn_veg"
+            android:layout_below="@id/appbarlayout"
+            />
+        <Button
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:background="@color/lightGreen"
+            android:layout_height="match_parent"
+            android:text="Fruits"
+            android:textAllCaps="false"
+            android:id="@+id/btn_fru"
+            android:layout_below="@id/appbarlayout"
+            />
+        <Button
+            android:layout_weight="0.25"
+            android:background="@color/lightGreen"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Exotic "
+            android:id="@+id/btn_exo"
+            android:textAllCaps="false"
+            android:layout_below="@id/appbarlayout"
+            />
+        <Button
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:background="@color/lightGreen"
+            android:layout_height="match_parent"
+            android:text="Organic"
+            android:textAllCaps="false"
+            android:id="@+id/btn_org"
+            android:layout_below="@id/appbarlayout"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_btn"
+        android:layout_centerHorizontal="true">
+
+    </android.support.v7.widget.RecyclerView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp"
+        app:elevation="6dp"
+        android:layout_above="@+id/bottomlayout"
+        app:pressedTranslationZ="12dp"
+        android:layout_alignParentRight="true" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="6"
+        android:background="#7A7979"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/product_text_activity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Products"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/history_text_activity"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Order"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/mini_quan_axy"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Coustomer"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/product"
+            android:title="Product"
+            android:icon="@drawable/ic_add_shopping"/>
+        <item
+            android:id="@+id/Order"
+            android:title="Order"
+            android:icon="@drawable/ic_shopping_bag"/>
+       <!-- <item
+            android:id="@+id/Customer"
+            android:title="Customer"
+            android:icon="@drawable/ic_person_outline"/>-->
+        <item
+            android:id="@+id/money_payment"
+            android:title="Money Payments"
+            android:icon="@drawable/ic_attach_money_black_24dp"/>
+
+    </group>
+
+
+</menu>

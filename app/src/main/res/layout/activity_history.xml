@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:titleTextColor="@color/white"
+            android:background="@color/lightGreen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your Items"
+                android:textSize="@dimen/_12ssp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image"
+                android:textColor="#fff"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textStyle="bold"
+
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/appbarlayout"
+        android:id="@+id/recycle6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomlayout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="4"
+        android:background="#7A7979"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/product_text_activity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Products"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/history_text_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="History"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/venders_text_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Vendor"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/wallet_text_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Wallet"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</RelativeLayout>
